@@ -1,0 +1,15 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="assets\Scripts\ChatGui.cs">
+    <Files>
+      <File FileName="assets\Scripts\ChatGui.cs" Line="53" Column="52" />
+      <File FileName="assets\Scripts\global.cs" Line="12" Column="3" />
+      <File FileName="assets\Scripts\PlayerController.cs" Line="33" Column="1" />
+      <File FileName="assets\Scripts\fire.cs" Line="28" Column="40" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
