@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour {
 	public float startWalkBoost = 5;
 	public float endWalkDampening = 7;
 	public AudioSource jetPackSound;
+	public AudioSource walkLoopSound;
 
 	public SpriteRenderer standingSprite;
 	public Animator walkingAnimation;
@@ -89,6 +90,17 @@ public class PlayerController : MonoBehaviour {
 		}
 
 
+// 		Walking Audio Loop
+		if ((Input.GetKey (KeyCode.RightArrow)) || (Input.GetKey (KeyCode.LeftArrow))) {
+						if (inPlanet) {
+								walkLoopSound.enabled = true;
+								walkLoopSound.loop = true;
+						}
+				} else {
+								walkLoopSound.enabled = false;
+								walkLoopSound.loop = false;		
+						}
+				
 
 // 		Placing Seeds
 		if (Input.GetKeyDown (KeyCode.DownArrow) & inPlanet) {
