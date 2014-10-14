@@ -3,6 +3,7 @@ using System.Collections;
 
 public class fire : MonoBehaviour {
 	public int speed;
+	public Texture fullColour;
 	// Use this for initialization
 	void Start () {
 		print ("force added?");
@@ -18,16 +19,8 @@ public class fire : MonoBehaviour {
 			this.transform.parent = coll.transform;
 			this.rigidbody2D.isKinematic = true;
 
-	//		bool alreadyTerraformed = false;
-	//		foreach (Transform child in coll.transform){
-	//			if (child.name == "seed(Clone)"){
-	//				alreadyTerraformed = true;
-	//			} 
-	//		}
-	//		if (alreadyTerraformed) global.terraFormedCount++;
 			if (!(coll.transform.childCount > 2)) global.terraFormedCount++;
-		//	print(coll.transform.childCount);
-
+			coll.transform.renderer.material.mainTexture = fullColour;
 		}
 	}
 }
