@@ -1,9 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="assets/Scripts/PlayerController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="assets\Scripts\deathSurface.cs">
     <Files>
-      <File FileName="assets/planets/Metal Final/CustomGreyscale.shader" Line="1" Column="1" />
-      <File FileName="assets/Scripts/PlayerController.cs" Line="80" Column="59" />
+      <File FileName="assets\Scripts\deathSurface.cs" Line="12" Column="1" />
+      <File FileName="assets\Scripts\Attractor.cs" Line="1" Column="1" />
+      <File FileName="assets\Scripts\fire.cs" Line="1" Column="1" />
+      <File FileName="assets\Scripts\global.cs" Line="1" Column="1" />
+      <File FileName="assets\planets\Metal Final\CustomGreyscale.shader" Line="1" Column="1" />
+      <File FileName="assets\planets\Metal Final\sbc.shader" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

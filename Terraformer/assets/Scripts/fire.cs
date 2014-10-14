@@ -18,6 +18,7 @@ public class fire : MonoBehaviour {
 		if (coll.gameObject.tag == "planet") {
 			this.transform.parent = coll.transform;
 			this.rigidbody2D.isKinematic = true;
+			global.lastSeedLocation = this.transform;
 
 			if (!(coll.transform.childCount > 2)){ 
 				global.terraFormedCount++;

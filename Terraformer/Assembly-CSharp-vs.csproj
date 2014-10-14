@@ -50,6 +50,7 @@
      <Compile Include="assets\Scripts\ChatGui.cs" />
      <Compile Include="assets\Scripts\PlayerController.cs" />
      <Compile Include="assets\Scripts\SmoothCamera2D.cs" />
+     <Compile Include="assets\Scripts\deathSurface.cs" />
      <Compile Include="assets\Scripts\fire.cs" />
      <Compile Include="assets\Scripts\global.cs" />
      <Compile Include="assets\Scripts\jetPackShow.cs" />
@@ -57,6 +58,7 @@
      <Compile Include="assets\Scripts\rotateAround.cs" />
      <Compile Include="assets\planets\Sun\Sun_1_rotate.cs" />
      <None Include="assets\planets\Metal Final\CustomGreyscale.shader" />
+     <None Include="assets\planets\Metal Final\sbc.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

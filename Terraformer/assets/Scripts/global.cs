@@ -6,6 +6,7 @@ public static class global{
 	public static int numberOfPlanets = 100;
 	public static bool ChatBoxIsUp;
 	public static ArrayList ChatBoxMessages = new ArrayList();
+	public static Transform lastSeedLocation;
 
 	public static void AddChatMessage (string text){
 		ChatBoxMessages.Insert (0, text);
