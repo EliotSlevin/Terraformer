@@ -19,8 +19,21 @@ public class fire : MonoBehaviour {
 			this.transform.parent = coll.transform;
 			this.rigidbody2D.isKinematic = true;
 
-			if (!(coll.transform.childCount > 2)) global.terraFormedCount++;
-			coll.transform.renderer.material = fullColour;
+			if (!(coll.transform.childCount > 2)){ 
+				global.terraFormedCount++;
+				//coll.transform.renderer.material.SetFloat("_EffectAmount", 0.5f);
+				//coll.transform.renderer.material = fullColour;
+				StartCoroutine(Fade(coll.transform.renderer));
+			}
+		}
+	}
+
+	IEnumerator Fade(Renderer itemToFade) {
+		for (float f = 1f; f >= 0; f -= 0.01f) {
+
+			itemToFade.material.SetFloat("_EffectAmount", f);
+			if (f == 0) itemToFade.material = fullColour;
+			yield return null;
 		}
 	}
 }

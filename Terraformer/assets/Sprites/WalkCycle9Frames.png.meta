@@ -1,6 +1,16 @@
 fileFormatVersion: 2
 guid: 7b8ef0db70a3f47d5b261587c1a8a931
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: WalkCycle9Frames_0
+    21300002: WalkCycle9Frames_1
+    21300004: WalkCycle9Frames_2
+    21300006: WalkCycle9Frames_3
+    21300008: WalkCycle9Frames_4
+    21300010: WalkCycle9Frames_5
+    21300012: WalkCycle9Frames_6
+    21300014: WalkCycle9Frames_7
+    21300016: WalkCycle9Frames_8
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
