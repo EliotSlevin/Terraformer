@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour {
 
 	public static bool inPlanet;
 	public GameObject seed;
-		
+
 	public float speed = 12;
 	public float jumpHeight = 10;
 	public float jetPackSpeed = 10;
@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour {
 	private int countTest = 0;
 
 	void Update () {
+
 		walkingAnimation.enabled = false;
 		standingSprite.sprite = standing;
 		
