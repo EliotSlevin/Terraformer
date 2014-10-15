@@ -16,11 +16,14 @@ public class PlayerController : MonoBehaviour {
 	public float endWalkDampening = 7;
 	public AudioSource jetPackSound;
 	public AudioSource walkLoopSound;
+	public AudioClip seedDropSound;
+	public AudioSource audioSeedDropSound;
 
 	public SpriteRenderer standingSprite;
 	public Animator walkingAnimation;
 	public Sprite standing;
 	private int countTest = 0;
+
 
 	void Update () {
 
@@ -102,11 +105,16 @@ public class PlayerController : MonoBehaviour {
 								walkLoopSound.loop = false;		
 						}
 				
+//		Seed Drop Sound
+		//if (Input.GetButtonDown ("use") && inRange) {
+		//	audio.PlayOneShot(seedDropSound);
 
+		//		}
 // 		Placing Seeds
 		if (Input.GetKeyDown (KeyCode.DownArrow) & inPlanet) {
 			Vector2 temp = this.transform.position;
 			Instantiate(seed, temp, this.transform.rotation);
+			audioSeedDropSound.PlayOneShot (seedDropSound);
 		}
 	}
 

@@ -1,12 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="assets\Scripts\deathSurface.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="assets/Scripts/PlayerController.cs">
     <Files>
-      <File FileName="assets\Scripts\deathSurface.cs" Line="21" Column="1" />
-      <File FileName="assets\Scripts\Attractor.cs" Line="1" Column="1" />
-      <File FileName="assets\Scripts\fire.cs" Line="14" Column="13" />
-      <File FileName="assets\Scripts\ChatGui.cs" Line="32" Column="3" />
-      <File FileName="assets\Scripts\PlayerController.cs" Line="1" Column="1" />
+      <File FileName="assets/Scripts/PlayerController.cs" Line="117" Column="22" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
