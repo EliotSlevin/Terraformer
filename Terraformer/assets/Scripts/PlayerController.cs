@@ -35,6 +35,9 @@ public class PlayerController : MonoBehaviour {
 		foreach (GameObject planet in planets) {
 			planet.transform.renderer.material.SetFloat("_EffectAmount", 1f);
 		}
+
+		Vector2 temp = this.transform.position;
+		Instantiate(seed, temp, this.transform.rotation);
 	}
 
 
@@ -45,7 +48,7 @@ public class PlayerController : MonoBehaviour {
 		
 		
 		// Chat Messages
-		if (global.terraFormedCount == 0 && messageCount == 0 && Time.time > (startTime + 5)) {
+		if (messageCount == 0 && Time.time > (startTime + 5)) {
 			global.AddChatMessage("<b>Manager(private)</b>\nWelcome Employee 21105 to section 91. You have already been debriefed but I would like to repeat that you are here to terraform this section of space " +
 			                      "for the indigenous colony that has contracted our help.\nYour suit allows you to use the LEFT and RIGHT arrows to move around planets and rotate while in space. Furthermore the SPACEBAR allows you " +
 			                      "to jump between planets and the UP arrow will engage your Jet pack. Most " +
