@@ -1,10 +1,16 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="assets/Scripts/PlayerController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="assets/StartMenu/StartMenuOpenLevel.cs">
     <Files>
       <File FileName="assets/Scripts/rotateAround.cs" Line="1" Column="1" />
-      <File FileName="assets/Scripts/PlayerController.cs" Line="117" Column="22" />
+      <File FileName="assets/Scripts/PlayerController.cs" Line="1" Column="1" />
       <File FileName="assets/planets/Metal Final/CustomGreyscale.shader" Line="1" Column="1" />
+      <File FileName="../../PlayerControllerWithDialogue.cs" Line="1" Column="1" />
+      <File FileName="assets/Scripts/ChatGui.cs" Line="1" Column="1" />
+      <File FileName="assets/Scripts/fire.cs" Line="1" Column="1" />
+      <File FileName="assets/Scripts/Attractor.cs" Line="20" Column="48" />
+      <File FileName="assets/flyAround.cs" Line="15" Column="32" />
+      <File FileName="assets/StartMenu/StartMenuOpenLevel.cs" Line="11" Column="45" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

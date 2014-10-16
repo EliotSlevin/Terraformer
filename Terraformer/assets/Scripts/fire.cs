@@ -6,7 +6,6 @@ public class fire : MonoBehaviour {
 	public Material fullColour;
 	// Use this for initialization
 	void Start () {
-		print ("force added?");
 		rigidbody2D.AddForce (transform.up * -speed);
 	}
 	
@@ -20,11 +19,24 @@ public class fire : MonoBehaviour {
 			this.rigidbody2D.isKinematic = true;
 			global.lastSeedLocation = this.transform;
 
-			if (!(coll.transform.childCount > 2)){ 
+			int seedCount = 0;
+			foreach (Transform child in coll.transform)
+			{
+				if (child.name == "seed(Clone)") seedCount++;
+			}
+
+			if (!(seedCount > 1)){ 
 				global.terraFormedCount++;
 				//coll.transform.renderer.material.SetFloat("_EffectAmount", 0.5f);
 				//coll.transform.renderer.material = fullColour;
 				StartCoroutine(Fade(coll.transform.renderer));
+
+				foreach (Transform child in coll.transform)
+				{
+					if (child.name != "seed(Clone)" && child.name != "attractor"){
+						StartCoroutine(Fade(child.transform.renderer));
+					}
+				}
 			}
 		}
 	}

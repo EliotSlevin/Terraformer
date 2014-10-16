@@ -57,6 +57,7 @@
      <Compile Include="assets\Scripts\limitSpeed.cs" />
      <Compile Include="assets\Scripts\rotateAround.cs" />
      <Compile Include="assets\StartMenu\StartMenuOpenLevel.cs" />
+     <Compile Include="assets\flyAround.cs" />
      <Compile Include="assets\planets\Sun\Sun_1_rotate.cs" />
      <None Include="assets\planets\Metal Final\CustomGreyscale.shader" />
      <None Include="assets\planets\Metal Final\sbc.shader" />

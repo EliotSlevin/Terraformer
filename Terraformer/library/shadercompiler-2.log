@@ -1,0 +1,14 @@
+Base path: /Applications/Unity/Unity.app/Contents
+Pipe name: \\.\pipe\UnityShaderCompiler-2--1333477376
+Cmd: getPlatforms
+Cmd: compileSnippet
+  api=0 type=0 insize=4524 outsize=436 kw=DIRECTIONAL LIGHTMAP_ON DIRLIGHTMAP_OFF ok=1
+Cmd: compileSnippet
+  api=0 type=1 insize=4524 outsize=412 kw=DIRECTIONAL LIGHTMAP_ON DIRLIGHTMAP_ON ok=1
+Cmd: compileSnippet
+  api=0 type=0 insize=2482 outsize=817 kw=POINT_COOKIE ok=1
+Cmd: compileSnippet
+  api=0 type=1 insize=2482 outsize=727 kw=POINT_COOKIE ok=1
+End of pipe
+
+Quitting shader compiler process
