@@ -32,7 +32,7 @@ public class ChatGui : MonoBehaviour {
 		GUI.Box (topBar, "");
 		GUI.Box (chatBackground, "");
 
-		global.ChatBoxIsUp  = GUI.Toggle (topBar, global.ChatBoxIsUp, "EMPLOYEE MESSAGES");
+		global.ChatBoxIsUp  = GUI.Toggle (topBar, global.ChatBoxIsUp, "EMPLOYEE 21105 MESSAGES");
 
 		GUILayout.BeginArea (chatLocation);
 		int loopMax;
@@ -52,6 +52,6 @@ public class ChatGui : MonoBehaviour {
 		// Seed Count
 		Rect counterLocation = new Rect(Screen.width/2-100, 0,200,40);
 		GUI.Box (counterLocation, "");
-		GUI.Label (counterLocation, "System Health : " + global.terraFormedCount + "%", topPercent);
+		GUI.Label (counterLocation, "Section 91 Health : " + global.terraFormedCount + "%", topPercent);
 	}
 }
