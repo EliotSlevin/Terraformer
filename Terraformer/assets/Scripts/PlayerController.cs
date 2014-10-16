@@ -29,6 +29,15 @@ public class PlayerController : MonoBehaviour {
 	private float startTime;
 
 
+	void Start(){
+		GameObject[] planets;
+		planets = GameObject.FindGameObjectsWithTag("planet");
+		foreach (GameObject planet in planets) {
+			planet.transform.renderer.material.SetFloat("_EffectAmount", 1f);
+		}
+	}
+
+
 	void Update () {
 
 		walkingAnimation.enabled = false;
@@ -196,16 +205,13 @@ public class PlayerController : MonoBehaviour {
 								walkLoopSound.loop = false;		
 						}
 				
-//		Seed Drop Sound
-		//if (Input.GetButtonDown ("use") && inRange) {
-		//	audio.PlayOneShot(seedDropSound);
+
 
 		//		}
 // 		Placing Seeds
 		if (Input.GetKeyDown (KeyCode.DownArrow) & inPlanet) {
 			Vector2 temp = this.transform.position;
 			Instantiate(seed, temp, this.transform.rotation);
-			audioSeedDropSound.PlayOneShot (seedDropSound);
 		}
 	}
 

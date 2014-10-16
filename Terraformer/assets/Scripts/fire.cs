@@ -4,6 +4,9 @@ using System.Collections;
 public class fire : MonoBehaviour {
 	public int speed;
 	public Material fullColour;
+	public AudioClip seedDropSound;
+	public AudioSource audioSeedDropSound;
+
 	// Use this for initialization
 	void Start () {
 		rigidbody2D.AddForce (transform.up * -speed);
@@ -15,6 +18,8 @@ public class fire : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D coll) {
 		if (coll.gameObject.tag == "planet") {
+			audioSeedDropSound.PlayOneShot (seedDropSound);
+
 			this.transform.parent = coll.transform;
 			this.rigidbody2D.isKinematic = true;
 			global.lastSeedLocation = this.transform;
